@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background-color: rgb(238, 245, 248);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 0px;
+}
+
+
+nav ul li a {
+    margin: 0px 30px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 3px 5px rgb(112, 110, 110);
+}
+
+nav ul li a:hover {
+    box-shadow: 3px 3px 5px blue;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+nav button {
+    background-color: rgb(8, 8, 56);
+    color: white;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgb(112, 110, 110);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* SIDE BAR STYLING */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: rgb(238, 245, 248);
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+    z-index: 999;
+}
+
+.sidebar li {
+    height: 50px;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* ........................................END OF NAV BAR......................................  */
+
+header {
+    background-color: rgb(225, 236, 232);
+    height: 90vh;
+    width: 100vw;
+}
+
+.header-top {
+    /* border: 2px solid red; */
+    height: 10%;
+    width: 100%;
+}
+
+.header-icons svg {
+    height: 35px;
+    width: 35px;
+    margin: 0px 20px;
+    padding: 10px 0px;
+}
+
+.header-icons svg:hover {
+    box-shadow: 3px 3px 5px blue;
+    border-radius: 20px;
+    border: 2px solid gray;
+}
+
+.header-icons {
+    width: 20%;
+    height: 100%;
+    margin-left: auto;
+}
+
+
+.header-icons ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-bottom {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom-left {
+    height: 100%;
+    width: 100%;
+}
+
+.header-content {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content ul {
+    list-style: none;
+}
+
+.header-content li {
+    height: 50px;
+}
+
+.header-content li:first-child {
+    font-size: 2rem;
+}
+
+.header-content li button {
+    margin: 0px 15px 0px 0px;
+}
+
+.header-content li button:hover {
+    box-shadow: 3px 3px 5px blue;
+}
+
+.hire-button {
+    background-color: rgb(161, 84, 233);
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 3px 5px rgb(112, 110, 110);
+    border: none;
+    cursor: pointer;
+}
+
+.resume-button {
+    background-color: rgb(253, 253, 253);
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 3px 5px rgb(112, 110, 110);
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-right {
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerpicture {
+    height: 350px;
+    width: 350px;
+    background-image: url(img/header\ pic.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+/* .................END OF HEADER PART..................  */
+
+#about {
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(img/droplets.jpg); */
+    background-color: aliceblue;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-left {
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-picture {
+    height: 300px;
+    width: 300px;
+    background-image: url(img/header\ pic.webp);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.about-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+
+.about-right ul {
+    list-style: none;
+}
+
+.about-right ul li {
+    height: 50px;
+}
+
+.about-right ul li:first-child {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(172, 3, 3);
+}
+
+.experience {
+    font-size: 1.5rem;
+    color: orangered;
+    font-weight: 900;
+}
+
+.about-button {
+    margin: 0px 30px 0px 0px;
+    background-color: rgba(252, 249, 249, 0.842);
+    background-color: white;
+    border: 2px solid black;
+}
+
+.about-button:hover {
+    background-color: rgb(4, 4, 71);
+}
+
+.about-button a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 900;
+}
+
+.about-button a:hover{
+    color: white;
+}
+
+.about-bullets {
+    list-style-type: disc;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.about-cvbutton {
+    background-color: rgb(253, 253, 253);
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 3px 5px rgb(112, 110, 110);
+    border: none;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.about-cvbutton:hover {
+    box-shadow: 3px 3px 5px rgb(29, 29, 250);
+}
+
+/* .......................END OF ABOUT SECTION ...............  */
+
+#skills{
+    background-color: rgb(247, 237, 237);
+}
+
+section h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2rem;
+}
+
+section h4{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 100px; */
+}
+
+.card{
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 20px;
+    border: 2px solid transparent;
+    background-color: rgb(211, 247, 235);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(25, 2, 151);
+}
+
+
+.card:hover{
+    background-color: blanchedalmond;
+    box-shadow: 3px 3px 5px yellow;
+}
+
+.card img{
+    height: 35px;
+    width: 35px;
+}
+
+.card-content h2{
+    font-size: 2rem;
+}
+
+.card-content p{
+    font-size: 1.5rem;
+}
+
+.card-content button{
+    background-color: white;
+}
+
+.card-content button:hover{
+    background-color: rgb(3, 3, 73);
+}
+
+.card-content button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.card-content button a:hover{
+    color: white;
+}
+
+/* ...............END OF SKILLS SECTION.................  */
+
+#getintouch{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(135, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getintouch-container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.getintouch-container li{
+    height: 50px;
+    padding-right: 50px;
+    font-size: 2rem;
+}
+
+.getintouch-picture{
+    background-image: url(img/boy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+}
+
+.getintouch-container button{
+    background-color: rgb(57, 3, 109);
+    font-size: 1.25rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 3px 5px rgb(112, 110, 110);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.getintouch-container button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* END OF GETINTOUCH SECTION ..........................  */
+
+#contact{
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#contact h2{
+    text-align: center;
+    color: blue;
+    padding-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 30px;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px blue;
+    background-color: beige;
+    padding: 10px;
+}
+
+.contact-input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contact-button{
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+/* END OF CONTACT FORM..........................  */
+
+footer{
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* ....................START OF MEDIA QUERIES.......................  */
+@media(max-width: 1200px) {}
+
+@media(max-width: 900px) {
+    .hideonmobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    header {
+        height: 70vh;
+    }
+
+    .header-icons svg {
+        height: 26px;
+        width: 26px;
+    }
+
+    .header-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    .bottom-right {
+        display: none;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-right ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .getintouch-container li{
+        height: 50px;
+        padding-right: 10px;
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+    
+    .getintouch-picture{
+        height: 150px;
+        width: 150px;
+    }
+    
+    .getintouch-container button{
+        font-size: 1rem;
+    }
+    
+    .getintouch-container button a{
+        text-decoration: none;
+        color: white;
+    }
+
+    form{
+        gap: 15px;
+        width: 60%;
+    }
+
+    .contact-input{
+        width: 200px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+
+
+@media(max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .bottom-right {
+        display: none;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-right {
+        width: 100%;
+        align-items: center;
+    }
+
+}
