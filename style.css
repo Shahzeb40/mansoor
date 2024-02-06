@@ -609,4 +609,18 @@ footer{
         align-items: center;
     }
 
+    
+    .header-content li {
+        height: 60px;
+    }
+    
+    .header-content li:first-child {
+        font-size: 1.25rem;
+    }
+    
+    .header-content li button {
+        margin: 0px 15px 0px 0px;
+        width: 125px;
+    }
+
 }
